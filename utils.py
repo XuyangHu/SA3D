@@ -47,8 +47,8 @@ def save_image(img, img_path):
 
 
 def plot(samples, img_size):
-    fig = plt.figure(figsize=(4, 4))
-    gs = gridspec.GridSpec(4, 4)
+    fig = plt.figure(figsize=(8, 8))
+    gs = gridspec.GridSpec(8, 8)
     gs.update(wspace=0.05, hspace=0.05)
 
     for i, sample in enumerate(samples):
