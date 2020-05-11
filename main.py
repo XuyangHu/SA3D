@@ -2,7 +2,7 @@ import tensorflow as tf
 import os
 import argparse
 from utils import *
-from ops import vae_criterion
+from loss import vae_criterion
 from vae_unet import VAE_UNet
 
 """parsing and configuration"""
