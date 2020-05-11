@@ -16,7 +16,6 @@ def parse_args():
     parser.add_argument('--img_size', type=int, default=256, help='input image size')
     parser.add_argument('--gf_dim', type=int, default=64, help='The number of channel')
     parser.add_argument('--out_dim', type=int, default=3, help='The number of categories')
-    parser.add_argument('--epoch', type=int, default=100, help='The number of training epochs')
     parser.add_argument('--batch_size', type=int, default=64, help='The size of batch size')
     parser.add_argument('--lr', type=float, default=0.0002, help='The learning rate')
     parser.add_argument('--max_iter', type=int, default=50000, help='The number of iters')
