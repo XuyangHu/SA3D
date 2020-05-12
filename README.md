@@ -14,7 +14,7 @@ Python>=3.5, TensorFlow>=1.4, numpy, scipy, matplotlib
 We use ShapeNet dataset [Download dataset], password: eq1v
 
 ## Testing
-Results of our [pretrained models], password: eq1v:
+Results of our [Download pretrained models], password: eq1v:
 
 ```bash
 python main.py --phase test --mode $MODE$ --test_data_path $DATA_DIR$ --pretrained_model_path $PRETRAINED_MODEL$
@@ -43,7 +43,7 @@ If you use any part of this code in your research, please cite our paper:
 ```
 @inproceedings{hu2020structure,
   title={Structure-Aware 3D Shape Synthesis from Single-View Images},
-  author={Xuyang Hu, Fan Zhu, Li Liu, Jin Xie, Jun Tang, Nian Wang, Fumin Shen, Ling Shao},
+  author={Xuyang Hu, Fan Zhu, Li Liu, Jin Xie, Jun Tang, Nian Wang, Fumin Shen, and Ling Shao},
   booktitle={Proceedings of the 29th British Machine Vision Conference},
   year={2018}
 }
