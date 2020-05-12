@@ -14,7 +14,7 @@ Python>=3.5, TensorFlow>=1.4, numpy, scipy, matplotlib
 We use ShapeNet dataset [Download dataset], password: eq1v.
 
 ## Testing
-Results of our [Download pretrained models], password: eq1v:
+Results of our [Download pretrained models](https://pan.baidu.com/s/1RySrR54rbUMuvl3uwdYOHg), password: 3j2z:
 
 ```bash
 python main.py --phase test --mode $MODE$ --test_data_path $DATA_DIR$ --pretrained_model_path $PRETRAINED_MODEL$
@@ -50,4 +50,4 @@ If you use any part of this code in your research, please cite our paper:
 ```
 
 ## Acknowledge
-The code is built on [CycleGAN(TensorFlow)](https://github.com/XHUJOY/CycleGAN-tensorflow) and [3D-R2N2](https://github.com/chrischoy/3D-R2N2). We thank the authors for sharing the codes.
+The code is built on [CycleGAN (TensorFlow)](https://github.com/XHUJOY/CycleGAN-tensorflow) and [3D-R2N2](https://github.com/chrischoy/3D-R2N2). We thank the authors for sharing the codes.
