@@ -3,7 +3,7 @@
 TensorFlow implementation for “Structure-Aware 3D Shape Synthesis from Single-View Images”.
 
 <p align="center">
-<img src="imgs/SA3D.png" alt="The pipline of SA3D" width="100%" align=center />
+<img src="imgs/SA3D.png" alt="The pipline of SA3D" width="80%" align=center />
 </p>
 
 ## Dependencies
