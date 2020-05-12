@@ -21,7 +21,7 @@ python main.py --phase test --mode $MODE$ --test_data_path $DATA_DIR$ --pretrain
 ```
 
 - MODE: src viewpoint to dst viewpoint, such as leftside_to_rightside
-- DATA_DIR: path to test data path
+- DATA_DIR: path to test data
 - PRETRAINED_MODEL: path of the pretrained model
 
 Then, you can use [3D-R2N2](https://github.com/chrischoy/3D-R2N2) test based on the synthesis images.
@@ -31,7 +31,7 @@ Then, you can use [3D-R2N2](https://github.com/chrischoy/3D-R2N2) test based on 
 python main.py --phase train --data_path $DATA_DIR$ --mode $MODE$
 ```
 
-- DATA_DIR: path to train data path
+- DATA_DIR: path to train data
 - MODE: src viewpoint to dst viewpoint, such as leftside_to_rightside
 
 Then, you can use [3D-R2N2](https://github.com/chrischoy/3D-R2N2) train based on the synthesis images.
