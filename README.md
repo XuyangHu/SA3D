@@ -3,7 +3,7 @@
 TensorFlow implementation for “Structure-Aware 3D Shape Synthesis from Single-View Images”.
 
 <p align="center">
-<img src="imgs/SA3D.png" alt="The pipline of the proposed SA3D" width="90%" align=center />
+<img src="imgs/SA3D.png" alt="The pipline of the proposed SA3D" width="80%" align=center />
 </p>
 
 ## Dependencies
@@ -48,3 +48,6 @@ If you use any part of this code in your research, please cite our paper:
   year={2018}
 }
 ```
+
+## Acknowledge
+The code is built on [CycleGAN(TensorFlow)](https://github.com/XHUJOY/CycleGAN-tensorflow) and [3D-R2N2](https://github.com/chrischoy/3D-R2N2). We thank the authors for sharing the codes.
