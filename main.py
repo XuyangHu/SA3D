@@ -11,7 +11,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=desc)
     parser.add_argument('--phase', type=str, default='test', help='train or test ?')
     parser.add_argument('--data_path', type=str, default='./dataset/train/', help='dataset_name')
-    parser.add_argument('--mode', type=str, default='front_to_leftside', help='mode of image translation')
+    parser.add_argument('--mode', type=str, default='leftside_to_rightside', help='mode of image translation')
     parser.add_argument('--test_data_path', type=str, default='./test_data', help='test dataset_name')
     parser.add_argument('--img_size', type=int, default=256, help='input image size')
     parser.add_argument('--gf_dim', type=int, default=64, help='The number of channel')
@@ -31,6 +31,7 @@ def parse_args():
 def check_args(args):
     # --checkpoint_dir
     check_folder(args.checkpoint_dir)
+	check_folder(args.checkpoint_dir+args.mode)
     # --log_dir
     check_folder(args.log_dir)
     # --save_dir
@@ -98,7 +99,7 @@ def train(args, sess):
         print("Iter:%d, reg_loss:%f, rec_loss:%f, kl_loss:%f, vae_loss:%f" % (i, l_reg, l_rec, l_kl, l_vae))
 
         if i % 2000 == 0:
-            saver.save(sess, args.checkpoint_dir + '/model_{}.ckpt'.format(str(i)))
+            saver.save(sess, args.checkpoint_dir + args.mode + '/model_{}.ckpt'.format(str(i)))
             img_i, img_g, img_o = sess.run([input_, gt_img, out_img], feed_dict={input_:input_batch, gt_img:gt_batch})
             img_i = (img_i + 1) / 2
             fig = plot(img_i, args.img_size)
@@ -110,7 +111,7 @@ def train(args, sess):
             fig = plot(img_o, args.img_size)
             plt.savefig('{}/out_{}.png'.format(args.log_dir, str(i).zfill(5)), bbox_inches='tight')
 
-    saver.save(sess, args.checkpoint_dir + '/model_{}.ckpt'.format(str(args.max_iter)))
+    saver.save(sess, args.checkpoint_dir + args.mode + '/model_{}.ckpt'.format(str(args.max_iter)))
 
 def test(args, sess):
     print("Testing...")
