@@ -3,7 +3,7 @@
 TensorFlow implementation for “Structure-Aware 3D Shape Synthesis from Single-View Images”.
 
 <p align="center">
-<img src="imgs/SA3D.png" alt="The pipline of SA3D" width="80%" align=center />
+<img src="imgs/SA3D.png" alt="The pipline of the proposed SA3D" width="90%" align=center />
 </p>
 
 ## Dependencies
@@ -11,7 +11,7 @@ TensorFlow implementation for “Structure-Aware 3D Shape Synthesis from Single-
 Python>=3.5, TensorFlow>=1.4, numpy, scipy, matplotlib
 ```
 ## Dataset
-We use ShapeNet dataset [Download dataset], password: eq1v
+We use ShapeNet dataset [Download dataset], password: eq1v.
 
 ## Testing
 Results of our [Download pretrained models], password: eq1v:
