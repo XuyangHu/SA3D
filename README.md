@@ -11,10 +11,10 @@ TensorFlow implementation for “Structure-Aware 3D Shape Synthesis from Single-
 Python>=3.5, TensorFlow>=1.4, numpy, scipy, matplotlib
 ```
 ## Dataset
-We use ShapeNet dataset [Download dataset], password: eq1v.
+We use ShapeNet dataset [Download dataset](https://pan.baidu.com/s/1ejckaARYvXL892mmwXS3vA), password: se16. We provided the training set in this link, if you need the full of dataset, please contact me.
 
 ## Testing
-Results of our [Download pretrained models](https://pan.baidu.com/s/1RySrR54rbUMuvl3uwdYOHg), password: 3j2z:
+Results of our [Download pretrained models](https://pan.baidu.com/s/1RySrR54rbUMuvl3uwdYOHg), password: 3j2z. We provided the pretrained model in $--MODE leftside_to_rightside$, if you need the full of pretrained model, please contact me.
 
 ```bash
 python main.py --phase test --mode $MODE$ --test_data_path $DATA_DIR$ --pretrained_model_path $PRETRAINED_MODEL$
